@@ -11,17 +11,18 @@ body {
 .boxes {
     display: flex;
     justify-content: center;
+    
 }
 
 
 h1 {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,1) 100%);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 h2 {
-    background: linear-gradient(90deg, rgba(2,0,36,100) 0%, rgba(121,9,37,100) 50%, rgba(94,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(121,9,37,0.5) 50%, rgba(94,0,255,1) 100%);
     padding:0,auto;
     font-size: 50px;
     margin-top: 0;
@@ -39,15 +40,51 @@ button {
     font-weight: bold;
     width: 200px;
     margin-bottom: 5px;
-    border-radius: 5px;
+    border-radius: 50px;
+   
 }
+
 
 #increment-btn {
     background: darkred;
-    cursor: pointer;;
+    cursor: pointer;
+}
+
+#increment-btn:active {
+    transform: translateY(10px);
+}
+
+#increment-btn:hover{
+    background: rgb(30, 30, 172);
+    transition: 0.2s;
 }
 
 #save-btn {
-    background: darkgreen;
+    background: rgb(4, 150, 4);
     cursor: pointer;
+}
+
+#save-btn:active {
+    transform: translateY(10px);
+}
+#save-btn:hover{
+    background: rgb(222, 222, 109);
+    transition: 0.2s;
+}
+
+#reset-btn {
+    cursor: pointer;
+}
+#reset-btn:active{
+    transform: translateY(10px);
+}
+#reset-btn:hover{
+    background: black;
+    transition: 0.2s;
+}
+
+#message-el{
+    margin-top: 15em;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
 }

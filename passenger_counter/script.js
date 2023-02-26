@@ -1,13 +1,24 @@
 
-
+let countEl = document.getElementById('count-el');
+let message = '"Count Saved"';
+let saveEl = document.getElementById("save-el");
 let count =0;
 
 function countUp(){
     count++;
-    document.getElementById("count-el").innerText =count;
+    countEl.textContent = count;
 }
 
 function save(){
-    localStorage.setItem("count",count);
-    document.getElementById("count-el").innerText =count;
+    let countStr= ` ${count} - `;
+    saveEl.textContent +=countStr;
+    count=0;
+    countEl.textContent = count;
+    alert(message);
+}
+
+function reset(){
+    count = 0;
+    saveEl.innerText = "Previous Entries:";
+    // countEl.innerText = count;
 }
